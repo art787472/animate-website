@@ -13,7 +13,7 @@ import animEyes from '../public/section2_anim3_sadeyes.png'
 
 import { useRef } from 'react'
 import { gsap } from 'gsap'
-import ScrollTrigger from 'gsap/dist/scrollTrigger'
+
 import useGsap from './../hook/useGsap'
 
 const Container = styled.section`
