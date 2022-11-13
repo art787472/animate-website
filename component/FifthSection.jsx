@@ -14,9 +14,14 @@ import arrowRight from '../public/section5_arrow_right.png'
 import arrowDown from '../public/section5_arrow_down.png'
 import arrowLeft from '../public/section5_arrow_left.png'
 
+import styles from './../styles/FifthSection.module.css'
+
 const Container = styled.section`
   height: 1100px;
   text-align: center;
+  @media (max-width: 1104px) {
+    height: auto;
+  }
 `
 
 const Title = styled.h2`
@@ -33,6 +38,11 @@ const Title = styled.h2`
 
   /* Shadow/White */
   text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+
+  @media (max-width: 1104px) {
+    font-size: 32px;
+    width: 100%;
+  }
 `
 
 const CardContainer = styled.div`
@@ -48,26 +58,53 @@ const CardContainer = styled.div`
 
   position: relative;
 
+     & .card3 img {
+      margin-left: auto;
+    }
+  @media (max-width: 1104px) {
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+    & .card2, & .card3{
+      flex-direction: column-reverse;
+    }
+
+    & .card3 {
+      order: 3;
+    }
+
+    & .card3 img {
+      margin-left: 0;
+    }
+
+    & .card4 {
+      order: 4;
+    }
+  }
 
 `
 
 const CardBackground = styled.div`
-display: flex;
-flex-direction: row;
-align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
-padding: 40px;
-gap: 60px;
+  padding: 40px;
+  gap: 60px;
 
-width: 520px;
-height: 300px;
+  width: 520px;
+  height: 300px;
 
-/* Neutral Color/N1
+  /* Neutral Color/N1
 
-Primary Text
-*/
-border: 3px solid #FFFFFF;
-border-radius: 32px;
+  Primary Text
+  */
+  border: 3px solid #FFFFFF;
+  border-radius: 32px;
   &:hover {
     background: rgba(110, 119, 233, 0.1);
 
@@ -81,6 +118,18 @@ border-radius: 32px;
   &:hover h4 {
     color: #9DA4FF;
   }
+
+  @media (max-width: 1104px) {
+    width: 343px;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 63px;
+
+
+
+  }
 `
 
 const CardTitle = styled.h4`
@@ -90,6 +139,9 @@ const CardTitle = styled.h4`
   font-size: 32px;
   line-height: 48px;
   color: #fff;
+  @media (max-width: 1104px) {
+    text-align: center;
+  }
 `
 
 const CardText = styled.p`
@@ -99,6 +151,9 @@ const CardText = styled.p`
   font-size: 20px;
   line-height: 28px;
   color: #fff;
+  @media (max-width: 1104px) {
+    text-align: center;
+  }
 `
 
 const GreenText = styled.span`
@@ -110,6 +165,10 @@ const RightArrow = styled.img`
   top: 130px;
   left: 50%;
   transform: translate(-50%, 0%);
+  @media (max-width: 1104px) {
+    transform: translate(-50%, 0%) rotate(90deg);
+    top: 450px;
+  }
 `
 
 const DownArrow = styled.img`
@@ -117,6 +176,10 @@ const DownArrow = styled.img`
   top: 50%;
   right: 220px;
   tranform: translate(0%, -50%);
+  @media (max-width: 1104px) {
+    right: 50%;
+    transform: translate(50%, 0);
+  }
 `
 
 const LeftArrow = styled.img`
@@ -124,6 +187,10 @@ const LeftArrow = styled.img`
   bottom: 130px;
   left: 50%;
   transform: translate(-50%, 0%);
+  @media (max-width: 1104px) {
+    transform: rotate(-90deg) translate(50%, -25%);
+    bottom: 510px;
+  }
   `
 
 
@@ -236,9 +303,17 @@ function FifthSection () {
               <br />
               <CardText><GreenText>11/03-11/24</GreenText>每周四</CardText>
             </div>
-            <img src={play.src} alt="player button image" style={{marginLeft: 'auto'}}/>
+            <img src={play.src} alt="player button image"/>
           </CardBackground>
         </CardContainer>
+        <style jsx>{`
+        .card2 {
+          flex-direction: column-reverse;
+        }
+        p {
+          color: blue;
+        }
+      `}</style>
     </Container>
   )
 }

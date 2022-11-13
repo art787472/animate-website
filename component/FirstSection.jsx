@@ -35,6 +35,16 @@ const SignInButton = styled.button`
   &:hover {
     background-color: #FFF385;
   }
+
+   @media (max-width: 1104px) {
+    position: static;
+    width: 50%;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 45px;
+    display: block;
+  }
+
 `
 
 const Headline = styled.h2`
@@ -54,7 +64,8 @@ const Headline = styled.h2`
 
   @media (max-width: 1104px) {
     position: static;
-
+    width: 100%;
+    justify-content: center;
   }
 
 `
@@ -90,6 +101,9 @@ const Loop = styled.ul`
     & div {
       display: inline-block;
     }
+  @media (max-width: 1104px) {
+    font-size: 28px;
+  }
 `
 
 const FourPointStar = styled.div`
@@ -118,6 +132,11 @@ const FourPointStar = styled.div`
   height:1.15em;
   transform:rotate(45deg) skewX(22.5deg) skewY(22.5deg);
 }
+
+  @media (max-width: 1104px) {
+    font-size: 10px;
+    margin-bottom:45px;
+  }
 `
 
 function WordCarousel () {
@@ -156,25 +175,43 @@ const ArrowIllustration = styled.img`
   position: absolute;
   top: 349px;
   left: 300px;
+
+  @media (max-width: 1104px) {
+    visibility: hidden;
+  }
 `
 
 const PacmenIllustration = styled.img`
   position: absolute;
   top: 193px;
   left: 1141px;
+
+  @media (max-width: 1104px) {
+    visibility: hidden;
+  }
 `
 
 const BracketIllustration = styled.img`
   position: absolute;
   top: 248px;
   left: 97px;
-
+  @media (max-width: 1104px) {
+    left: 25px;
+    top: -150px;
+    width: 100px;
+  }
 `
 
 const DashboardIllustration = styled.img`
   position: absolute;
   top: 268px;
   left: 886px;
+
+  @media (max-width: 1104px) {
+    left: 70%;
+    top: 70%;
+    width: 100px;
+  }
 `
 
 const MainHeadline = styled.h2`
@@ -232,7 +269,16 @@ const MainHeadline = styled.h2`
   }
 
   @media (max-width: 1104px) {
-    height: 500px;
+    position: static;
+    width: 100%;
+    font-size: 42px;
+    justify-content: center;
+
+    &::after, &::before {
+      font-size: 42px;
+      justify-content: center;
+    }
+
   }
 `
 
@@ -285,10 +331,16 @@ const YearHeadline = styled.h2`
 
   }
 
-  @media (max-width: 1104px and screen) {
+  @media (max-width: 1104px) {
     position: static;
-    text-align: center;
     margin-top: 78px;
+    justify-content: center;
+    width: 100%;
+    font-size: 27px;
+
+    &::after, &::before {
+      font-size: 27px;
+    }
   }
 `
 
@@ -351,8 +403,9 @@ function FirstSection () {
       <PacmenIllustration src={pacmen.src}/>
       <BracketIllustration className="bracket" src={arrowBracket.src} />
       <DashboardIllustration  className="fade-in-from-bottom dashboard" src={dashboard.src}/>
-      <MainHeadline className="fade-in-from-bottom">the f2e</MainHeadline>
       <YearHeadline className="fade-in-from-bottom">4TH</YearHeadline>
+      <MainHeadline className="fade-in-from-bottom">the f2e</MainHeadline>
+
       <Headline>互動式網頁設計</Headline>
       <SignInButton>立即報名</SignInButton>
     </Container>

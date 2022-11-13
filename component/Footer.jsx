@@ -27,6 +27,9 @@ const Title = styled.h2`
   color: #FFFFFF;
   margin: 0 auto;
 
+    @media (max-width: 1104px) {
+    font-size: 32px;
+  }
 `
 
 const Subtitle = styled.p`
@@ -43,7 +46,9 @@ const Subtitle = styled.p`
   /* Neutral Color/N1 */
   color: #FFFFFF;
   margin-top: 8px;
-
+    @media (max-width: 1104px) {
+    font-size: 32px;
+  }
 `
 
 const LogoContainer = styled.div`
@@ -51,6 +56,9 @@ const LogoContainer = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 60px;
+  @media (max-width: 1104px) {
+    flex-direction: column;
+  }
 `
 
 const Logo = styled.div`
@@ -62,6 +70,10 @@ const Logo = styled.div`
   background: #FFFFFF;
   border-radius: 32px;
   margin-right: 60px;
+      @media (max-width: 1104px) {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
 `
 const FooterSection = styled.footer`
   padding-top: 17px;

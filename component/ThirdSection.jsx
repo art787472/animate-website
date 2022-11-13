@@ -90,6 +90,10 @@ const Boom = styled.img`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  @media (max-width: 1104px) {
+
+    width: 80%;
+  }
 `
 
 const Headline = styled.img`
@@ -97,6 +101,10 @@ const Headline = styled.img`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  @media (max-width: 1104px) {
+
+    width: 80%;
+  }
 `
 
 const LeftHand = styled.img`
@@ -104,6 +112,9 @@ const LeftHand = styled.img`
   top: 50%;
   left: 25%;
   transform: translate(-50%, -50%);
+  @media (max-width: 1104px) {
+    visibility: hidden;
+  }
 `
 
 const RightHand = styled.img`
@@ -111,6 +122,9 @@ const RightHand = styled.img`
   top: 50%;
   left: 75%;
   transform: translate(-50%, -50%);
+  @media (max-width: 1104px) {
+    visibility: hidden;
+  }
 `
 
 const Subtitle = styled.h4`
@@ -123,18 +137,30 @@ const Subtitle = styled.h4`
   transform: translate(-52%, -50%);
   top: 550px;
   left: 50%;
+    @media (max-width: 1104px) {
+    visibility: hidden;
+  }
 `
 
 const StampYellow = styled.img`
   position: absolute;
   top: 413px;
   left: 220px;
+  @media (max-width: 1104px) {
+    left: -30%;
+
+  }
 `
 
 const StampPurple = styled.img`
   position: absolute;
   top: 90px;
   left: 960px;
+  @media (max-width: 1104px) {
+    top: 10%;
+    left: 60%;
+    width: 30%;
+  }
 `
 
 

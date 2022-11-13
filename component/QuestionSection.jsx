@@ -19,72 +19,131 @@ import useGsap from './../hook/useGsap'
 const Container = styled.section`
   position: relative;
   height: 1000px;
+  @media (max-width: 1104px) {
+    height: 500px;
+  }
+
 `
 
 const FirstRectangle = styled.img`
   position: absolute;
   top: 49px;
   left: 343px;
+  @media (max-width: 1104px) {
+    top: 3%;
+    left: 15%;
+    width: 40%;
+  }
 `
 
 const FirstStar = styled.img`
   position: absolute;
   top: 80px;
   left: 720px;
+  @media (max-width: 1104px) {
+    top: 6%;
+    left: 60%;
+    width: 10%;
+  }
 `
 
 const FirstQuestion = styled.img`
   position: absolute;
   top: 172px;
   left: 285px;
+  @media (max-width: 1104px) {
+    left: 10%;
+    top: 13%;
+    width: 70%;
+  }
 `
 
 const FirstQuestionMark = styled.img`
   position: absolute;
   top: 120px;
   left: 870px;
+  @media (max-width: 1104px) {
+    left: 80%;
+    top: 15%;
+    width: 20%;
+  }
 `
 
 const SecondBang = styled.img`
   position: absolute;
   top: 412px;
   left: 260px;
+  @media (max-width: 1104px) {
+    left: 5%;
+    top: 43%;
+    width: 20%;
+  }
 `
 
 const SecondPeanut = styled.img`
   position: absolute;
   top: 430px;
   left: 580px;
+  @media (max-width: 1104px) {
+    left: 30%;
+    top: 37%;
+    width: 5%;
+  }
 `
 
 const SecondQuestion = styled.img`
   position: absolute;
   top: 300px;
   left: 670px;
+  @media (max-width: 1104px) {
+    left: 40%;
+    top: 30%;
+    width: 50%;
+  }
 `
 
 const ThirdRectangle = styled.img`
   position: absolute;
   top: 535px;
   left: 580px;
+  @media (max-width: 1104px) {
+    left: 30%;
+    top: 47%;
+    width: 40%;
+  }
 `
 
 const ThirdTriangle = styled.img`
   position: absolute;
   top: 525px;
   left: 963px;
+  @media (max-width: 1104px) {
+    left: 70%;
+    top: 50%;
+    width: 12%;
+  }
 `
 
 const ThirdQuestion = styled.img`
   position: absolute;
   top: 665px;
   left: 358px;
+  @media (max-width: 1104px) {
+    left: 10%;
+    top: 60%;
+    width: 50%;
+  }
 `
 
 const ThirdEye = styled.img`
   position: absolute;
   top: 650px;
   left: 946px;
+  @media (max-width: 1104px) {
+    left: 65%;
+    top: 60%;
+    width: 20%;
+  }
 `
 
 function QuestionSection () {

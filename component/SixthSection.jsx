@@ -16,6 +16,12 @@ const Container = styled.section`
   padding-left: 205px;
   padding-right: 205px;
   padding-bottom: 205px;
+
+  @media (max-width: 1104px) {
+    height: auto;
+    padding: 0;
+    padding-top: 80px;
+  }
 `
 
 const Title = styled.h1`
@@ -35,6 +41,11 @@ const Title = styled.h1`
 
   /* Shadow/White */
   text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+
+  @media (max-width: 1104px) {
+    font-size: 24px;
+    justify-content: center;
+  }
 `
 
 
@@ -43,6 +54,13 @@ const CardContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  @media (max-width: 1104px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+  }
 `
 
 const Card = styled.div`
@@ -65,8 +83,15 @@ const Card = styled.div`
 
   border-image: linear-gradient(142.33deg, rgba(157, 164, 255, 0.8) -0.03%, rgba(85, 255, 173, 0.8) 99.97%) 2;
   transform: translateY(-5px);
+  }
 
-)
+  @media (max-width: 1104px) {
+    width: 90%;
+    padding: 24px;
+    margin-bottom: 24px;
+     &:not(:last-child) {
+    margin-right: 0;
+  }
   }
 `
 
@@ -153,6 +178,11 @@ const CardInfoText = styled.p`
 
 const BoldText = styled.span`
   font-weight: 700;
+
+   @media (max-width: 1104px) {
+    display: block;
+    margin-right: auto;
+  }
 `
 
 const ImageContainer = styled.div`
@@ -163,16 +193,30 @@ const ImageContainer = styled.div`
   margin: 0 auto;
   margin-bottom: 60px;
   margin-top: 63px;
+  @media (max-width: 1104px) {
+    width: auto;
+    display: flex;
+    justify-content: center;
+  }
 `
 
 const CarImage = styled.img`
   position: absolute;
-right: 0;
+  right: 0;
+  @media (max-width: 1104px) {
+    width: 10%;
+  }
 `
 
 const FlagImage = styled.img`
   position: absolute;
   left: 0;
+
+  @media (max-width: 1104px) {
+    width: 10%;
+    left: 10%;
+    bottom: 0;
+  }
 `
 const Line = styled.div`
   width: 856px;
@@ -188,6 +232,9 @@ background: #FFFFFF;
 box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
 position: absolute;
 bottom: 0;
+@media (max-width: 1104px) {
+    width: 80%;
+  }
 `
 
 function SixthSection () {

@@ -12,6 +12,9 @@ const Container = styled.section`
   position: relative;
   height: 1100px;
   padding-top: 152px;
+    @media (max-width: 1104px) {
+    height: auto;
+  }
 `
 
 const Headline = styled.h2`
@@ -32,6 +35,13 @@ const Headline = styled.h2`
   padding: 16px 36px 20px;
   gap: 10px;
   margin: 0 auto;
+  @media (max-width: 1104px) {
+    font-size: 32px;
+    width: 85%;
+    height: auto;
+    display: block;
+    text-align: center;
+  }
 `
 
 const Description = styled.p`
@@ -55,6 +65,11 @@ const Description = styled.p`
   color: #FFFFFF;
   margin: 0 auto;
   margin-top: 60px;
+
+  @media (max-width: 1104px) {
+
+    width: 60%;
+  }
 `
 
 const CardContainer = styled.div`
@@ -64,6 +79,10 @@ const CardContainer = styled.div`
   width: 980px;
   margin: 0 auto;
   margin-top: 60px;
+  @media (max-width: 1104px) {
+    flex-direction: column;
+    width: 100%;
+  }
 `
 const CardBackground = styled.div`
   width: 300px;
@@ -73,6 +92,9 @@ const CardBackground = styled.div`
   padding: 50px 56.5px;
   visiblity: hidden;
   backface-visibility: hidden;
+  @media (max-width: 1104px) {
+    margin-bottom: 40px;
+  }
 `
 
 const CardTitle = styled.h4`

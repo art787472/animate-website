@@ -104,6 +104,12 @@ const QuestionSection = styled.section`
   margin: 0 auto;
   margin-top: 44px;
   padding: 80px;
+
+  @media (max-width: 1104px) {
+    width: 90%;
+    height: auto;
+    padding: 24px;
+  }
 `
 
 const QuestionIndex = styled.h3`
@@ -159,6 +165,9 @@ const AnswerText = styled.p`
 const QuestionBackground = styled.div`
   display: flex;
   margin-bottom: 60px;
+    @media (max-width: 1104px) {
+    flex-direction: column;
+  }
 `
 
 const Button = styled.button`
